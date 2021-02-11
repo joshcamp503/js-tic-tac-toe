@@ -1,7 +1,32 @@
+body {
+  background-color:blueviolet;
+}
+
 .wrapper {
   text-align: center;
-  background-color:blueviolet;
-  height: 1000px;
+  height: 100%;
+  width: 100%;
+}
+
+.banner {
+  background-color:aquamarine;
+  width: 55%;
+  height: 10%;
+  margin: auto;
+  margin-top: 3%;
+  position: relative;
+}
+
+.banner-text{
+  width: 100%;
+  margin: 0;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+  letter-spacing: 10px;
 }
 
 .container {
@@ -9,7 +34,7 @@
   height: 400px;
   display: block;
   margin: auto;
-  padding-top: 150px;
+  margin-top:4%;
 }
 
 table{
