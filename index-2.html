@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="style-2.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container-fluid">
+
+    <div class="row banner-row">
+      <div class="col-lg-8 banner bg-primary">
+        <span class="banner-text py-md-3 py-2 display-6">Welcome to TIC-TAC-TOE!</span>
+      </div>
+    </div>
+
+    <div class="container mt-4 pt-4 main" >
+
+      <div class="row game-space align-items-center justify-content-center">
+        
+        
+        <div class="col-md-2 d-flex align-items-center bg-warning score-card" id="player1-card">
+          <div class="form-container">
+            <form action="" class="name-form">
+              <label for="pname">Enter name:</label>
+              <input type="text" class="pname" name="pname">
+              <input type="submit" class="name-submit">
+            </form>
+          </div>  
+          <div class="card bg-transparent" >
+            <a href="#" class="change-name-link">Change player name</a>
+            <img src="lug-wrench.png" class="card-img-top" id="wrench" alt="lug-wrench">
+            <div class="card-body">
+              <h5 class="card-title" id="player1-name">Player 1</h5>     
+            </div>
+            <div class="score-box px-2" id="player1-score">0</div>  
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-8 game-table m-5 bg-danger">
+
+          <div class="space row-1" id="space1"></div>
+          <div class="space row-1" id="space2"></div>
+          <div class="space row-1" id="space3"></div>
+          <div class="space row-2" id="space4"></div>
+          <div class="space row-2" id="space5"></div>
+          <div class="space row-2" id="space6"></div>
+          <div class="space row-3" id="space7"></div>
+          <div class="space row-3" id="space8"></div>
+          <div class="space row-3" id="space9"></div>
+
+        </div>
+
+        <div class="col-md-2 d-flex align-items-center bg-warning score-card" id="player2-card">
+          <div class="form-container">
+            <form action="" class="name-form">
+              <label for="pname">Enter name:</label>
+              <input type="text" class="pname" name="pname">
+              <input type="submit" class="name-submit">
+            </form>
+          </div>  
+          <div class="card bg-transparent" >
+            <a href="#" class="change-name-link">Change player name</a>
+            <img src="donut.png" class="card-img-top" id="donut" alt="donut">
+            <div class="card-body">
+              <h5 class="card-title" id="player2-name">Player 2</h5>   
+            </div>
+            <div class="score-box px-2" id="player2-score">0</div>    
+          </div>
+        </div>
+
+      </div> <!-- second row div end-->
+
+      <button type="button" class="btn btn-success reset-button">Reset</button>
+
+    </div> <!-- second container end-->
+
+  </div> <!-- container-fluid end-->
+
+  <div class="popup-wrapper">
+    <div class="popup">
+      <div class="popup-content">
+        <h2>It's a tie...</h2>
+        <button class="ok">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="app-2.js"></script>
+</body>
+</html>
