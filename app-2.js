@@ -138,15 +138,23 @@ class Game{
     return this.state.every(i => i != null);
   };
 
-  reset() {
-    // Reset player names to default
-    document.querySelector('#player1-name').textContent = "Player 1";
-    document.querySelector('#player2-name').textContent = "Player 2";
+  resetScores() {
     // Reset player scores to 0
     player1.score = 0;
     player2.score = 0;
     // Clear UI
     this.clearBoard();
+  };
+
+  resetNames() {
+    // Reset player names to default
+    document.querySelector('#player1-name').textContent = "Player 1";
+    document.querySelector('#player2-name').textContent = "Player 2";
+  };
+
+  resetAll() {
+    this.resetScores()
+    this.resetNames()
   }
 
 };
@@ -192,14 +200,20 @@ game.init();
 // End of Change Player Name feature
 
 // Add reset feature
-const resetButton = document.querySelector('button')
-resetButton.addEventListener('click', function(e) {
-  game.reset();
+const resetScoresButton = document.querySelector('.reset-scores-button')
+resetScoresButton.addEventListener('click', function(e) {
+  game.resetScores();
 })
 
+const resetNamesButton = document.querySelector('.reset-names-button')
+resetNamesButton.addEventListener('click', function(e) {
+  game.resetNames();
+})
 
-
-
+const clearBoardButton = document.querySelector('.clear-board-button')
+clearBoardButton.addEventListener('click', function(e) {
+  game.clearBoard();
+})
 
 
 
